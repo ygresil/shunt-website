@@ -47,9 +47,39 @@
         </header>
 
         <div id="panorama" class="jumbotron">
-            <figure>
-                <img src="http://placekitten.com/1200/400" alt="">
-            </figure>
+            <div id="jumbo-car" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#jumbo-car" data-slide-to="0" class="active"></li>
+                    <li data-target="#jumbo-car" data-slide-to="1"></li>
+                    <li data-target="#jumbo-car" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="http://placekitten.com/1200/400" alt="">
+                        <div class="carousel-caption">
+                            <h3>Rapidité</h3>
+                            <p>N'attendez plus pour lancer un téléchargement !</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="http://placekitten.com/1200/400" alt="">
+                        <div class="carousel-caption">
+                            <h3>Mobilité</h3>
+                            <p>Lancez vos téléchargements où que vous soyez !</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="http://placekitten.com/1200/400" alt="">
+                        <div class="carousel-caption">
+                            <h3>Flexibilité</h3>
+                            <p>Gardez un oeil sur vos téléchargements à tout moment et partout !</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="page">
@@ -60,7 +90,92 @@
             </div>
             <div class="content">
                 <div class="container">
-                    Hello world
+                    
+                    <section class="row bubbles">
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="http://placekitten.com/150/150" alt="" class="img-circle">
+                            </figure>
+                            <h2>Lorem ipsum</h2>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="btn btn-info" role="button">Plus d'infos ></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="http://placekitten.com/150/150" alt="" class="img-circle">
+                            </figure>
+                            <h2>Lorem ipsum</h2>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="btn btn-info" role="button">Plus d'infos ></a>
+                        </div>
+                        <div class="col-lg-4">
+                            <figure>
+                                <img src="http://placekitten.com/150/150" alt="" class="img-circle">
+                            </figure>
+                            <h2>Lorem ipsum</h2>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <a href="#" class="btn btn-info" role="button">Plus d'infos ></a>
+                        </div>
+                    </section>
+
+                    <hr class="feature-divider">
+
+                    <section class="row feature">
+                        <div class="col-md-7">
+                            <h2 class="feature-heading">Dolor sit amet. <span class="text-muted">Hello world.</span></h2>
+                            <p class="lead">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                        <div class="col-md-5">
+                            <!-- Screenshots carousel -->
+                            <div id="screen-car" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#screen-car" data-slide-to="0" class="active"></li>
+                                    <li data-target="#screen-car" data-slide-to="1"></li>
+                                    <li data-target="#screen-car" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img src="http://placekitten.com/500/450" alt=""/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="http://placekitten.com/500/450" alt=""/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="http://placekitten.com/500/450" alt=""/>
+                                    </div>
+                                </div>
+
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#screen-car" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#screen-car" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            <!-- /Screenshots carousel -->
+                            </div>
+                        </div>
+                    </section>
+
+                    <hr class="feature-divider">
+
+                    <section class="row feature">
+                        <div class="col-md-5">
+                            <figure>
+                                <img src="http://placekitten.com/500/450" alt="" class="img-responsive"/>
+                            </figure>
+                        </div>
+                        <div class="col-md-7">
+                            <h2 class="feature-heading">Dolor sit amet. <span class="text-muted">Hello world.</span></h2>
+                            <p class="lead">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </section>
+
+                    <hr class="feature-divider">
+
                 </div>
             </div>
         </div>
