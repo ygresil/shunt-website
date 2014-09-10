@@ -1,0 +1,30 @@
+#panorama {
+    position: fixed;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+
+    img {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+}
+
+#page {
+    position: relative;
+
+    > .content {
+        background-color: #fff;
+    }
+}
+
+.hidden-head {
+    opacity: 0;
+    background-color: transparent;
+
+    img {
+        display: block;
+        width: 100%;
+    }
+}
