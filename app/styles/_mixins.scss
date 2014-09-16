@@ -1,0 +1,24 @@
+@mixin inline-block($valign: false) {
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+
+    @if $valign == true {
+        vertical-align: middle;
+    }
+}
+
+@mixin transition($property:all, $time:0.2s, $method:ease-in-out) {
+    -webkit-transition: $property $time $method;
+       -moz-transition: $property $time $method;
+        -ms-transition: $property $time $method;
+         -o-transition: $property $time $method;
+            transition: $property $time $method;
+}
+
+@mixin box-shadow($left, $top, $blur, $color, $inset:"") {
+
+    -webkit-box-shadow: $left $top $blur $color #{$inset};
+       -moz-box-shadow: $left $top $blur $color #{$inset};
+            box-shadow: $left $top $blur $color #{$inset};
+}

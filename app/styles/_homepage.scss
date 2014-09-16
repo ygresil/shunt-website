@@ -1,3 +1,5 @@
+// Jumbotron
+
 #panorama {
     position: fixed;
     top: 50px;
@@ -12,11 +14,15 @@
     }
 }
 
+
+// Content
+
 #page {
     position: relative;
 
     > .content {
         background-color: #fff;
+        @include box-shadow(0,0,20px,rgba(0,0,0,0.5));
     }
 }
 
@@ -30,15 +36,66 @@
     }
 }
 
+
+// Bubbles section
+
 .bubbles {
     margin: 50px auto;
     text-align: center;
+
+    .bubble-item {
+        margin-bottom: 30px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .pic {
+            @include inline-block();
+            width: 70px;
+            height: 70px;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: lighten(#5bc0de, 5%);
+            @include box-shadow(0,1px,5px,rgba(0,0,0,0.3),inset);
+            font-size: 40px;
+            line-height: 1em;
+            color: white;
+            text: {
+                align: center;
+                shadow: 0 1px 2px rgba(0,0,0,0.3);
+            }
+        }
+
+        p {
+            max-width: 80%;
+            margin: {
+                left: auto;
+                right: auto;
+            }
+        }
+    }
 }
 
-.feature {
-    // img {
-    //     max-width: 100%;
-    // }
+
+// Features sections
+
+.about {
+    p {
+        text-align: justify;
+    }
+
+    .logo {
+        display: block;
+        margin: 0 auto 30px;
+    }
+
+    .iconic {
+        text-align: center;
+        i {
+            margin: 0 20px;
+        }
+    }
 }
 
 .feature-divider {
@@ -53,12 +110,32 @@
 
 @media (min-width: 768px) {
     .feature-heading {
-       font-size: 50px;
+       font-size: 42px;
     }
 }
 
 @media (min-width: 992px) {
     .feature-heading {
-        margin-top: 120px;
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .feature-heading {
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #screen-car {
+        margin-top: 70px;
+    }
+}
+
+// Carousels
+
+#screen-car {
+    .item > img {
+        width: 100%;
     }
 }

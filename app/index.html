@@ -8,17 +8,27 @@
         <link rel="shortcut icon" href="/favicon.ico">
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <!-- endbuild -->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <!-- Facebook SDK -->
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
         <header id="header">
             <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
@@ -31,15 +41,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Shunt</a>
+                        <a class="navbar-brand" href="http://shunt.fr" title="Shunt, site officiel"><img src="./images/shunt-mini.png" alt="Shunt, manageur de téléchargements"></a>
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="main-nav">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
-                            <li><a href="#">Link</a></li>
+                            <li><a href="index.html" title="Accueil">Accueil</a></li>
+                            <li><a href="howto.html" title="Comment installer et utiliser Shunt">Documentation</a></li>
                         </ul>
                     </div>
                 </div>
@@ -58,24 +66,21 @@
                 <!-- Slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="http://placekitten.com/1200/400" alt="">
+                        <img src="http://placehold.it/1200x400" alt="">
                         <div class="carousel-caption">
-                            <h3>Rapidité</h3>
-                            <p>N'attendez plus pour lancer un téléchargement !</p>
+                            <p>Gérez vos téléchargements à tout moment et où que vous soyez !</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="http://placekitten.com/1200/400" alt="">
+                        <img src="http://placehold.it/1200x400" alt="">
                         <div class="carousel-caption">
-                            <h3>Mobilité</h3>
-                            <p>Lancez vos téléchargements où que vous soyez !</p>
+                            <p>Gérez vos téléchargements à tout moment et où que vous soyez !</p>
                         </div>
                     </div>
                     <div class="item">
-                        <img src="http://placekitten.com/1200/400" alt="">
+                        <img src="http://placehold.it/1200x400" alt="">
                         <div class="carousel-caption">
-                            <h3>Flexibilité</h3>
-                            <p>Gardez un oeil sur vos téléchargements à tout moment et partout !</p>
+                            <p>Gérez vos téléchargements à tout moment et où que vous soyez !</p>
                         </div>
                     </div>
                 </div>
@@ -85,47 +90,58 @@
         <div id="page">
             <div class="hidden-head">
                 <figure>
-                    <img src="http://placekitten.com/1200/400" alt="">
+                    <img src="http://placehold.it/1200x400" alt="">
                 </figure>
             </div>
             <div class="content">
                 <div class="container">
                     
                     <section class="row bubbles">
-                        <div class="col-lg-4">
-                            <figure>
-                                <img src="http://placekitten.com/150/150" alt="" class="img-circle">
+                        <div class="col-md-4 col-sm-6 col-xs-12 bubble-item">
+                            <figure class="pic">
+                                <i class="fa fa-rocket"></i>
                             </figure>
-                            <h2>Lorem ipsum</h2>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <a href="#" class="btn btn-info" role="button">Plus d'infos ></a>
+                            <h2>Rapidité</h2>
+                            <p>N'attendez plus d'être rentré chez vous pour lancer un téléchargement !</p>
                         </div>
-                        <div class="col-lg-4">
-                            <figure>
-                                <img src="http://placekitten.com/150/150" alt="" class="img-circle">
+                        <div class="col-md-4 col-sm-6 col-xs-12 bubble-item">
+                            <figure class="pic">
+                                <i class="fa fa-compass"></i>
                             </figure>
-                            <h2>Lorem ipsum</h2>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <a href="#" class="btn btn-info" role="button">Plus d'infos ></a>
+                            <h2>Mobilité</h2>
+                            <p>Lancez vos téléchargements où que vous soyez, à partir de votre mobile ou votre tablette !</p>
                         </div>
-                        <div class="col-lg-4">
-                            <figure>
-                                <img src="http://placekitten.com/150/150" alt="" class="img-circle">
+                        <div class="col-md-4 col-sm-6 col-xs-12 bubble-item">
+                            <figure class="pic">
+                                <i class="fa fa-coffee"></i>
                             </figure>
-                            <h2>Lorem ipsum</h2>
-                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                            <a href="#" class="btn btn-info" role="button">Plus d'infos ></a>
+                            <h2>Simplicité</h2>
+                            <p>En quelques secondes à peine, lancez, arrêtez ou priorisez vos téléchargements.</p>
+                        </div>
+                        <div class="col-md-4 col-md-offset-2 col-sm-6 col-xs-12 bubble-item">
+                            <figure class="pic">
+                                <i class="fa fa-sitemap"></i>
+                            </figure>
+                            <h2>Unicité</h2>
+                            <p>Gérez et gardez un oeil sur tous vos téléchargements, même s'ils sont présents sur différents ordinateurs, dans une seule et même interface !</p>
+                        </div>
+                        <div class="col-md-4 col-md-offset-0 col-sm-6 col-sm-offset-3 col-xs-12 bubble-item">
+                            <figure class="pic">
+                                <i class="fa fa-child"></i>
+                            </figure>
+                            <h2>Gratuit</h2>
+                            <p>Shunt sera bientôt disponible sur les différents stores, et ce gratuitement !</p>
                         </div>
                     </section>
 
                     <hr class="feature-divider">
 
                     <section class="row feature">
-                        <div class="col-md-7">
-                            <h2 class="feature-heading">Dolor sit amet. <span class="text-muted">Hello world.</span></h2>
-                            <p class="lead">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <div class="col-sm-7 col-xs-12">
+                            <h2 class="feature-heading">Vous n’avez pas le temps ou vous êtes en déplacement ? <span class="text-muted">Shunt prend le relai.</span></h2>
+                            <p class="lead">Quoi de mieux qu’une application qui gère l’ensemble de vos téléchargements pour vous, à tout moment et partout.<br>Fini les pense-bêtes perdus et les heures d'attente !</p>
                         </div>
-                        <div class="col-md-5">
+                        <div class="col-sm-5 col-xs-12">
                             <!-- Screenshots carousel -->
                             <div id="screen-car" class="carousel slide" data-ride="carousel">
                                 <!-- Indicators -->
@@ -133,18 +149,22 @@
                                     <li data-target="#screen-car" data-slide-to="0" class="active"></li>
                                     <li data-target="#screen-car" data-slide-to="1"></li>
                                     <li data-target="#screen-car" data-slide-to="2"></li>
+                                    <li data-target="#screen-car" data-slide-to="3"></li>
                                 </ol>
 
                                 <!-- Wrapper for slides -->
                                 <div class="carousel-inner">
                                     <div class="item active">
-                                        <img src="http://placekitten.com/500/450" alt=""/>
+                                        <img src="./images/examples/shunt-example1.jpg" alt="Gérez vos téléchargements au café avec Shunt"/>
                                     </div>
                                     <div class="item">
-                                        <img src="http://placekitten.com/500/450" alt=""/>
+                                        <img src="./images/examples/shunt-example2.jpg" alt="Gérez vos téléchargements en voiture avec Shunt"/>
                                     </div>
                                     <div class="item">
-                                        <img src="http://placekitten.com/500/450" alt=""/>
+                                        <img src="./images/examples/shunt-example3.jpg" alt="Gérez vos téléchargements au restaurant avec Shunt"/>
+                                    </div>
+                                    <div class="item">
+                                        <img src="./images/examples/shunt-example4.jpg" alt="Gérez vos téléchargements au bureau avec Shunt"/>
                                     </div>
                                 </div>
 
@@ -162,19 +182,26 @@
 
                     <hr class="feature-divider">
 
-                    <section class="row feature">
-                        <div class="col-md-5">
+                    <section class="row feature about">
+                        <div class="col-sm-8 col-sm-offset-2 col-xs-12">
                             <figure>
-                                <img src="http://placekitten.com/500/450" alt="" class="img-responsive"/>
+                                <img src="./images/shunt-medium.png" alt="Shunt" class="logo"/>
                             </figure>
-                        </div>
-                        <div class="col-md-7">
-                            <h2 class="feature-heading">Dolor sit amet. <span class="text-muted">Hello world.</span></h2>
-                            <p class="lead">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                            <p class="lead">Quelle frustration de devoir noter sur un bout de papier le nom des fichiers à télécharger le soir en rentrant chez soi !</p>
+                            <p class="lead">L’application Shunt offre une issue à cette situation: lancez le téléchargement de ces fichiers directement depuis votre Smartphone ou votre tablette.</p>
+                            <p class="lead">Il n'est plus nécessaire d'attendre d'avoir un ordinateur sous la main. Vous évitez ainsi d'oublier un fichier ou de perdre votre pense bête. En plus de les débuter à distance, gérer en live vos téléchargements directement depuis l'application: mise en route, pause, arrêt, suppression, ...</p>
+                            <p class="lead">Où que vous soyez, à n’importe quel moment, lancer les téléchargements de votre choix  pour gagner en temps et en bonne humeur !</p>
+                            <p class="iconic">
+                                <i class="fa fa-mobile" style="font-size:58px"></i>
+                                <i class="fa fa-tablet" style="font-size:70px"></i>
+                                <i class="fa fa-laptop" style="font-size:110px"></i>
+                            </p>
                         </div>
                     </section>
 
                     <hr class="feature-divider">
+
+                    <div class="fb-like" data-href="http://shunt.fr/" data-layout="button" data-action="like" data-show-faces="false" data-share="true"></div>
 
                 </div>
             </div>
@@ -184,15 +211,18 @@
             <nav class="navbar navbar-fixed-bottom navbar-inverse" role="navigation">
                 <div class="container">
                     <p class="navbar-text">Made with <span class="glyphicon glyphicon-heart"></span> by the Shunt-project team</p>
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
-                        <li><a href="#">Link</a></li>
+                    <ul class="nav navbar-nav navbar-right iconic">
+                        <li><a href="#" title="Suivez Shunt sur Facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#" title="Suivez Shunt sur Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://github.com/Shunt-EIP" title="Retrouvez Shunt sur Github"><i class="fa fa-github"></i></a></li>
                     </ul>
                 </div>
             </nav>
         </footer>
 
+        <a href="https://github.com/Shunt-EIP" target="_blank" title="Fork Shunt project on Github">
+            <img style="position: fixed; top: 50px; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png">
+        </a>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
@@ -200,7 +230,7 @@
         <!-- endbower -->
         <!-- endbuild -->
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!-- Google Analytics -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;

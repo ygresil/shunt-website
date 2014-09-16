@@ -1,3 +1,12 @@
 #footer {
 	margin-bottom: 50px;
+
+    .iconic {
+        font-size: 18px;
+
+        > li {
+            @include inline-block(true);
+        }
+    }
 }
+
