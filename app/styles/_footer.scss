@@ -1,0 +1,16 @@
+#footer {
+	margin-bottom: 50px;
+
+    .navbar-text {
+        font-weight: 300;
+    }
+
+    .iconic {
+        font-size: 18px;
+
+        > li {
+            @include inline-block(true);
+        }
+    }
+}
+

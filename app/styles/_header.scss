@@ -1,0 +1,25 @@
+#header {
+	a {
+		color: $blue;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+
+		&:hover {
+			color: white;
+		}
+
+        i.fa {
+            font-size: 18px;
+        }
+	}
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+
+    img {
+        @include inline-block(true);
+        max-height: 100%;
+    }
+}
