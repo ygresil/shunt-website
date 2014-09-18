@@ -16,6 +16,14 @@
             transition: $property $time $method;
 }
 
+@mixin transform($property) {
+    -webkit-transform: $property;
+       -moz-transform: $property;
+        -ms-transform: $property;
+         -o-transform: $property;
+            transform: $property;
+}
+
 @mixin box-shadow($left, $top, $blur, $color, $inset:"") {
 
     -webkit-box-shadow: $left $top $blur $color #{$inset};

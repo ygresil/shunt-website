@@ -21,6 +21,7 @@
     position: relative;
 
     > .content {
+        padding-bottom: 120px;
         background-color: #fff;
         background: #fff url('../images/furley_bg.png') repeat center;
         @include box-shadow(0,0,20px,rgba(0,0,0,0.5));
@@ -72,12 +73,27 @@
             border-radius: 50%;
             background-color: lighten(#5bc0de, 5%);
             @include box-shadow(0,1px,5px,rgba(0,0,0,0.3),inset);
+            @include transition(all,0.5s);
             font-size: 40px;
             line-height: 1em;
             color: white;
             text: {
                 align: center;
                 shadow: 0 1px 2px rgba(0,0,0,0.3);
+            }
+
+            > i {
+                @include transition();
+            }
+        }
+
+        &:hover {
+            .pic {
+                // @include transform(rotate(360deg));
+
+                > i {
+                    @include transform(scale(1.6,1.6));                
+                }
             }
         }
 
@@ -130,6 +146,28 @@
     }
 }
 
+
+// Contact
+
+.buttons > * {
+    vertical-align: top;
+}
+
+
+// Carousels
+
+#screen-car {
+    border: 7px solid #fff;
+    @include box-shadow(0,5px,10px,rgba(0,0,0,0.25));
+
+    .item > img {
+        width: 100%;
+    }
+}
+
+
+// Media queries
+
 @media (min-width: 768px) {
     .feature-heading {
        font-size: 42px;
@@ -152,15 +190,8 @@
     #screen-car {
         margin-top: 70px;
     }
-}
-
-// Carousels
-
-#screen-car {
-    border: 7px solid #fff;
-    @include box-shadow(0,5px,10px,rgba(0,0,0,0.25));
-
-    .item > img {
-        width: 100%;
+    .contact figure {
+        margin-top: 40px;
     }
 }
+
