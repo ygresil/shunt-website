@@ -1,9 +1,17 @@
 #header {
 	a {
 		color: $blue;
+        text-transform: uppercase;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+
 		&:hover {
 			color: white;
 		}
+
+        i.fa {
+            font-size: 18px;
+        }
 	}
 }
 

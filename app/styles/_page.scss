@@ -48,7 +48,7 @@
 }
 
 
-// Title
+// Titles
 
 .title {
     h1 {
@@ -60,6 +60,39 @@
         text-align: center;
     }
 }
+
+.blue-title {
+    // background-color: lighten($blue, 5%);
+    // @include gradient($blue,lighten($blue,15%));
+    margin: 0;
+    background: #333 url('../images/pentagone_bg.png') repeat center;
+    color: white;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+    @include box-shadow(0,0,20px,rgba(0,0,0,0.5),inset);
+
+    h1 {
+        margin: 40px 5%;
+    }
+}
+
+
+// Intro - alert
+
+.intro {
+    .alert {
+        margin: 60px auto;
+
+        p {
+            font: {
+                size: 18px;
+                weight: 300;
+            }
+            line-height: 1.4;
+            text-align: justify;
+        }
+    }
+}
+
 
 // Bubbles section
 
@@ -80,7 +113,7 @@
             height: 70px;
             padding: 15px;
             border-radius: 50%;
-            background-color: lighten(#5bc0de, 5%);
+            @include gradient($blue,lighten($blue,15%));
             @include box-shadow(0,1px,5px,rgba(0,0,0,0.3),inset);
             @include transition(all,0.5s);
             font-size: 40px;
@@ -117,7 +150,7 @@
 }
 
 
-// Features sections
+// Features section
 
 .about {
     p {
@@ -175,6 +208,37 @@
 }
 
 
+// Panels
+
+#howto {
+    .panel-title {
+        // font-weight: 300;
+        text-transform: uppercase;
+
+        i.fa {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        a {
+            display: block;
+            @include transition();
+
+            &:hover {
+                text-decoration: none;
+                color: #999;
+            }
+        }
+    }
+
+    .panel-body {
+        h3 {
+            font-size: 21px;
+        }
+    }
+}
+
+
 // Media queries
 
 @media (max-width: 460px) {
@@ -212,4 +276,3 @@
         margin-top: 40px;
     }
 }
-
