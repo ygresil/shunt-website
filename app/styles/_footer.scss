@@ -11,10 +11,6 @@
         > li {
             @include inline-block(true);
         }
-
-        .navbar-text {
-            font-size: 14px;
-        }
     }
 }
 

@@ -6,11 +6,19 @@
     margin: 0;
     padding: 0;
     width: 100%;
+    background: #333 url('../images/pentagone_bg.png') repeat center;
 
     img {
         display: block;
         width: 100%;
-        margin: 0;
+        margin: auto;
+    }
+
+    a {
+        color: $blue;
+        &:hover {
+            color: white;
+        }
     }
 }
 
